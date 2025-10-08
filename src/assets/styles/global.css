@@ -1,0 +1,21 @@
+@font-face {
+    font-family: SourceSans3Bold;
+    src: url(../fonts/SourceSans3-Bold.ttf);
+}
+
+@font-face {
+    font-family: SourceSans3Regular;
+    src: url(../fonts/SourceSans3-Regular.ttf);
+}
+
+@font-face {
+    font-family: SourceSans3SemiBold;
+    src: url(../fonts/SourceSans3-SemiBold.ttf);
+}
+
+#root {
+    min-width: 1280px;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

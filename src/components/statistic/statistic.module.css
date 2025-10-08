@@ -1,0 +1,9 @@
+.statistic {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--base-color);
+    font-family: SourceSans3SemiBold;
+    color: var(--neutral-color-0);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}

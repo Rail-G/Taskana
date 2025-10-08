@@ -1,0 +1,36 @@
+.navBar {
+    width: 204px;
+    height: 100vh;
+    padding: 24px 15px;
+    background-color: var(--neutral-color-100);
+}
+
+.button {
+    width: 100%;
+    display: block;
+    background-color: var(--neutral-color-800);
+    font-family: SourceSans3SemiBold;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 6px 8px 6px 7px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--neutral-color-0);
+}
+
+.button:hover {
+    background-color: var(--neutral-color-600);
+}
+
+.icon {
+    width: 27px;
+    height: 28px;
+    display: block;
+    margin-right: 7px;
+    background-image: url(../../assets/incomingMsg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}

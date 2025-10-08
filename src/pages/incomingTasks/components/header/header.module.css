@@ -1,0 +1,11 @@
+.h1 {
+    font-size: 33px;
+    font-family: SourceSans3SemiBold;
+    color: var(--neutral--color-800);
+    line-height: 40px;
+}
+
+.header {
+    max-width: 950px;
+    margin: auto;
+}
