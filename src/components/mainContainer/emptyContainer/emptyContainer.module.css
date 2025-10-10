@@ -1,15 +1,12 @@
 .empty {
-    height: calc(100% - 56px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    position: sticky;
+    top: 0;
+
 }
 
 .h2 {

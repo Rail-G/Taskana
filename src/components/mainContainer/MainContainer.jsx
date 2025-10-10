@@ -10,7 +10,7 @@ export default function MainContainer() {
             <div className={styles.header}>
                 <h1 className={styles.h1}>Входящие</h1>
             </div>
-            <div className={styles.test}>
+            <div className={styles.board}>
                 {taskList.length > 0
                     ? <TaskList />
                     : <EmptyContainer />}

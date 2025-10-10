@@ -1,0 +1,22 @@
+.button {
+    background-color: var(--primary-color-400);
+    font-family: SourceSans3SemiBold;
+    font-size: 16px;
+    line-height: 29px;
+    color: var(--neutral-color-0);
+    padding: 0px 16px 0px 10px;
+    border-radius: 10px;
+    text-align: left;
+    border: 0;
+}
+
+.icon {
+    width: 27px;
+    height: 27px;
+    display: block;
+    margin-right: 7px;
+    background-image: url(../../assets/addMsg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}

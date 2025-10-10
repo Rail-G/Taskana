@@ -6,7 +6,7 @@ export default function EmptyContainer() {
                 <h2 className={styles.h2}>Все твои задачи организованы как надо</h2>
                 <span className={styles.span}>Отличная работа! Ты большой молодец!</span>
             </div>
-            <img className={styles.img} src="src/assets/womanYogo.png" alt="Woman Yogo" />
+            <img className={styles.img} src="/womanYogo.png" alt="Woman Yogo" />
         </div>
     )
 }

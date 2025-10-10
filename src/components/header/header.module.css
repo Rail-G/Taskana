@@ -3,27 +3,6 @@
     padding: 12px 24px 12px 15px;
     display: flex;
     justify-content: space-between;
-}
-
-.button {
-    background-color: var(--primary-color-400);
-    font-family: SourceSans3SemiBold;
-    font-size: 16px;
-    line-height: 29px;
-    color: var(--neutral-color-0);
-    padding: 0px 16px 0px 10px;
-    border-radius: 10px;
-    text-align: left;
-    border: 0;
-}
-
-.icon {
-    width: 27px;
-    height: 27px;
-    display: block;
-    margin-right: 7px;
-    background-image: url(../../assets/addMsg.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    float: left;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }

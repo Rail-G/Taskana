@@ -1,21 +1,24 @@
+@import './normalize.css';
+@import './variables.css';
+
 @font-face {
     font-family: SourceSans3Bold;
-    src: url(../fonts/SourceSans3-Bold.ttf);
+    src: url(../fonts/SourceSans3-Bold.woff2);
 }
 
 @font-face {
     font-family: SourceSans3Regular;
-    src: url(../fonts/SourceSans3-Regular.ttf);
+    src: url(../fonts/SourceSans3-Regular.woff2);
 }
 
 @font-face {
     font-family: SourceSans3SemiBold;
-    src: url(../fonts/SourceSans3-SemiBold.ttf);
+    src: url(../fonts/SourceSans3-SemiBold.woff2);
 }
 
 #root {
     min-width: 1280px;
-    max-height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
