@@ -18,15 +18,13 @@
 .header {
     width: 100%;
     max-width: 950px;
-    margin: auto;
 }
 
 .board {
-    height: 100%;
     width: 100%;
+    flex-grow: 1;
     flex-direction: column;
     overflow-y: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
 }

@@ -3,7 +3,7 @@ export default function TaskList() {
     return (
         <>
         <div className={styles.taskList}>
-            Задача, какая то
+            Задача, какая то One
         </div>
         <div className={styles.taskList}>
             Задача, какая то
