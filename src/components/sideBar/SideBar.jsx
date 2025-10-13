@@ -4,10 +4,10 @@ import styles from './sideBar.module.css'
 export default function SideBar() {
     const statisticList = []
     return (
-        <div className={styles.sideBar}>
+        <aside className={styles.sideBar}>
             {statisticList.length > 0
                 ? <Statistic />
                 : <EmptySideBar/>}
-        </div>
+        </aside>
     )
 }

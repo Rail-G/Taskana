@@ -1,23 +1,13 @@
-.container {
-    height: calc(100vh - (56px + 64px));
-    padding: 24px;
-    font-weight: 700;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-}
-
 .h1 {
     font-size: 33px;
     font-family: SourceSans3SemiBold;
     color: var(--neutral--color-800);
     line-height: 40px;
+    padding-left: clamp(0px, calc(0px + (160 * (100vw - 1600px)) / 320), 160px);
 }
 
 .header {
     width: 100%;
-    max-width: 950px;
 }
 
 .board {
