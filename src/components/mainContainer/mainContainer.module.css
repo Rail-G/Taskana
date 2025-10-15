@@ -4,6 +4,7 @@
     color: var(--neutral--color-800);
     line-height: 40px;
     padding-left: clamp(0px, calc(0px + (160 * (100vw - 1600px)) / 320), 160px);
+    transition: color 0.2s;
 }
 
 .header {
@@ -17,4 +18,8 @@
     overflow-y: auto;
     display: flex;
     align-items: center;
+}
+
+.dark {
+    color: var(--neutral-dark-800)
 }

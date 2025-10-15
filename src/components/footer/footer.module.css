@@ -5,9 +5,43 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: var(--neutral-color-600)
+    color: var(--neutral-color-600);
+    background-color: var(--neutral-color-0);
+    transition: all 0.2s;
 }
 
 .link {
-    color: var(--neutral-color-600)
+    color: inherit;
+    outline: 0px solid transparent;
+    outline-offset: 0;
+    transition: all 0.2s;
+}
+
+.link:hover {
+    color: var(--neutral-color-900);
+}
+
+.link:focus {
+    color: var(--neutral-color-900);
+    outline: 4px solid var(--neutral-color-900);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.dark {
+    background-color: var(--neutral-dark-0);
+    color: var(--neutral-dark-600)
+}
+
+.dark .link {
+    color: inherit
+}
+
+.dark .link:hover {
+    color: var(--neutral-dark-900);
+}
+
+.dark .link:focus {
+    color: var(--neutral-dark-900);
+    outline: 4px solid var(--neutral-dark-900);
 }

@@ -1,8 +1,15 @@
 .header {
-    background-color: var(--base-color);
+    background-color: var(--base-black);
     padding: 12px 24px 12px 15px;
     display: flex;
     justify-content: space-between;
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+}
+
+.block {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
 }

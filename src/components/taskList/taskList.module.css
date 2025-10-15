@@ -1,8 +1,8 @@
 .taskList {
     padding: 10px;
     width: 100%;
-    color: white;
-    background-color: black;
+    color: var(--neutral-color-0);
+    background-color: var(--base-black);
     border-radius: 10px;
     margin-bottom: 5px;
 }

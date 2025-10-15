@@ -1,0 +1,49 @@
+.block {
+    padding: 4px;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    background-color: var(--base-800);
+    border-radius: 8px;
+    outline: 0px solid transparent;
+    outline-offset: 0;
+    transition: all 0.2s;
+}
+
+.block:focus-within {
+    outline: 2px solid var(--base-white);
+    outline-offset: 2px;
+}
+
+.button {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 4px;
+    transition: inherit;
+    outline: 0;
+}
+
+.active {
+    background-color: var(--primary-color-400);
+    cursor: pointer;
+}
+
+.active .toggle {
+    fill: var(--base-white)
+}
+
+.active:hover {
+    background-color: var(--base-white);
+}
+
+.active:hover .toggle {
+    fill: var(--base-900)
+}
+
+.toggle {
+    fill: var(--base-600);
+    transition: inherit;
+}

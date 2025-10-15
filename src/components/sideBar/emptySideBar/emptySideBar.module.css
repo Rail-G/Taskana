@@ -9,11 +9,18 @@
     font-size: 16px;
     line-height: 24px;
     font-family: SourceSans3Regular;
-    gap: 15px
+    gap: 12px;
+    transition: all 0.2s;
 }
 
 .span {
     margin-top: 10px;
+    color: var(--neutral-color-700);
+    transition: inherit;
+}
+
+.dark span {
+    color: var(--neutral-dark-800)
 }
 
 .block {
@@ -21,4 +28,32 @@
     flex-grow: 1;
     flex-direction: column;
     align-items: center;
+}
+
+.icon {
+    transition: inherit;
+}
+
+.iconBorder {
+    transition: inherit;
+}
+
+.dark .iconBorder {
+    fill: var(--neutral-dark-300);
+}
+
+.iconBackground {
+    transition: inherit;
+}
+
+.dark .iconBackground {
+    fill: var(--neutral-dark-0);
+}
+
+.iconRow {
+    transition: inherit;
+}
+
+.dark .iconRow {
+    fill: var(--neutral-dark-700);
 }
