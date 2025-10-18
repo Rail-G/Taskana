@@ -3,9 +3,9 @@
     background-color: var(--primary-color-400);
     font-family: SourceSans3SemiBold;
     font-size: 16px;
-    line-height: 29px;
+    line-height: 24px;
     color: var(--neutral-color-0);
-    padding: 5px 16px 6px 15px;
+    padding: 8px 16px 8px 12px;
     border-radius: 8px;
     text-align: left;
     border: 0;
@@ -16,13 +16,14 @@
     transition: all 0.2s, padding 0s;
     outline: 0px solid transparent;
     outline-offset: 0;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .button:hover {
     background-color: var(--primary-color-500);
 }
 
-.button:focus {
+.button:focus-visible {
     outline: 2px solid var(--base-white);
     outline-offset: 2px;
 }
@@ -43,7 +44,9 @@
 }
 
 .icon {
-    margin-right: 3px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
     fill: var(--base-white)
 }
 
@@ -66,4 +69,10 @@
 
 .iconLoading {
     stroke: var(--base-white)
+}
+
+.iconBody {
+    width: 24px;
+    height: 24px;
+    position: relative;
 }

@@ -21,7 +21,7 @@
     color: var(--neutral-color-900);
 }
 
-.link:focus {
+.link:focus-visible {
     color: var(--neutral-color-900);
     outline: 4px solid var(--neutral-color-900);
     outline-offset: 4px;
@@ -41,7 +41,7 @@
     color: var(--neutral-dark-900);
 }
 
-.dark .link:focus {
+.dark .link:focus-visible {
     color: var(--neutral-dark-900);
     outline: 4px solid var(--neutral-dark-900);
 }

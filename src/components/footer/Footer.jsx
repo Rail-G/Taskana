@@ -5,7 +5,7 @@ export default function Footer() {
     const { theme } = useContext(ThemeContext)
     return (
         <footer className={`${styles.footer} ${!theme && styles.dark}`}>
-            Проект выполнен в рамках стажировки <a href="https://preax.ru/" target='_blank' className={styles.link}>PREAX</a>
+            Проект выполнен в рамках стажировки <a href="https://preax.ru/" target='_blank'  className={styles.link}>PREAX</a>
         </footer>
     )
 }

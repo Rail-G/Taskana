@@ -11,8 +11,8 @@ export default function MainContainer() {
     const taskList = []
     return (
         <Content>
-            <div className={styles.header}>
-                <h1 className={`${styles.h1} ${!theme && styles.dark}`}>Входящие</h1>
+            <div className={`${styles.header} ${!theme && styles.dark}`}>
+                <h1 className={styles.h1}>Входящие</h1>
             </div>
             <div className={styles.board}>
                 {taskList.length > 0

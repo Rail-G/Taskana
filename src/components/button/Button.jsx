@@ -10,7 +10,7 @@ export default function Button() {
             ? <div className={styles.btnLoading}>
                 <Icon name={'loading'} className={styles.iconLoading} />
             </div>
-            : <><Icon name={'addTask'} className={styles.icon} />
+            : <><div className={styles.iconBody}><Icon name={'addTask'} className={styles.icon} /></div>
             Создать</>}
         </button>
     )

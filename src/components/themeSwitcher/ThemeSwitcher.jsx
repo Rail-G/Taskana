@@ -6,9 +6,9 @@ import { ThemeContext } from "../../context/AppContext";
 export default function ThemeSwitcher() {
     const { theme, changeTheme, handleEnter } = useContext(ThemeContext)
     return (
-        <div className={styles.block} onKeyDown={handleEnter} tabIndex={0}>
-            <button tabIndex={-1} className={`${styles.button} ${theme && styles.active}`} onClick={changeTheme} disabled={!theme}><Icon name={'sun'} fill={styles.toggle}/></button>
-            <button tabIndex={-1} className={`${styles.button} ${!theme && styles.active}`} onClick={changeTheme}  disabled={theme}><Icon name={'moon'} fill={styles.toggle}/></button>
-        </div>
+        <button className={styles.button} onClick={changeTheme}>
+            <div className={`${styles.block} ${theme && styles.active}`}><Icon name={'sun'} fill={styles.toggle}/></div>
+            <div className={`${styles.block} ${!theme && styles.active}`}><Icon name={'moon'} fill={styles.toggle}/></div>
+        </button>
     )
 }

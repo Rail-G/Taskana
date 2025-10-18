@@ -9,17 +9,26 @@
 
 .header {
     width: 100%;
+    z-index: 4;
+    position: sticky;
+    background-color: var(--neutral-color-0);
+    top: 0;
+    padding-top: 24px;
+    transition: background-color 0.2s;
 }
 
 .board {
     width: 100%;
     flex-grow: 1;
     flex-direction: column;
-    overflow-y: auto;
     display: flex;
     align-items: center;
 }
 
 .dark {
+    background-color: var(--neutral-dark-0);
+}
+
+.dark .h1 {
     color: var(--neutral-dark-800)
 }
