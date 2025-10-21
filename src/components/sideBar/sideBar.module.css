@@ -10,8 +10,3 @@
     border-left: 1px solid var(--neutral-color-300, rgba(236, 236, 236, 1));
     transition: background-color 0.2s, border-color 0.2s;
 }
-
-.dark {
-    background-color: var(--neutral-dark-100);
-    border-left-color: var(--neutral-dark-300);
-}

@@ -4,3 +4,8 @@
     overflow: hidden;
     display: flex;
 }
+
+.block {
+    width: 400px;
+    position: relative;
+}

@@ -1,6 +1,5 @@
 .content {
     height: calc(100vh - (56px + 64px));
-    padding: 0 24px 24px;
     font-weight: 700;
     display: flex;
     justify-content: flex-start;
@@ -12,6 +11,6 @@
     position: relative;
 }
 
-.dark {
+/* .dark {
     background-color: var(--neutral-dark-0);
-}
+} */

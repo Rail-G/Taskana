@@ -27,21 +27,3 @@
     outline-offset: 4px;
     border-radius: 4px;
 }
-
-.dark {
-    background-color: var(--neutral-dark-0);
-    color: var(--neutral-dark-600)
-}
-
-.dark .link {
-    color: inherit
-}
-
-.dark .link:hover {
-    color: var(--neutral-dark-900);
-}
-
-.dark .link:focus-visible {
-    color: var(--neutral-dark-900);
-    outline: 4px solid var(--neutral-dark-900);
-}

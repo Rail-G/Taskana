@@ -5,7 +5,7 @@ import { ThemeContext } from '../../context/AppContext'
 export default function Content({children}) {
     const {theme} = useContext(ThemeContext)
     return (
-        <div className={`${styles.content} ${!theme && styles.dark}`}>
+        <div className={styles.content}>
             {children}
         </div>
     )

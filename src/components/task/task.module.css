@@ -1,0 +1,90 @@
+.block {
+    width: 100%;
+    min-height: 56px;
+    padding: 8px 8px 8px 16px;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.block:hover {
+    background-color: var(--neutral-color-100);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.block:focus-visible {
+    background-color: var(--neutral-color-100);
+    outline: 2px solid var(--neutral-color-900);
+    outline-offset: 2px;
+}
+
+.iconBlock {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.checkbox {
+    display: none
+}
+
+.label {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 4px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+}
+
+.checkbox[data-priority='1'] + .label {
+    border-color: var(--neutral-color-400);
+}
+
+.checkbox[data-priority='2'] + .label {
+    border-color: var(--secondary-color-300);
+}
+
+.checkbox[data-priority='3'] + .label {
+    border-color: var(--primary-color-300);
+}
+
+.checkbox[data-priority='1'] + .label:hover {
+    border-color: var(--neutral-color-800);
+}
+
+.checkbox[data-priority='2'] + .label:hover {
+    border-color: var(--secondary-color-500);
+}
+
+.checkbox[data-priority='3'] + .label:hover {
+    border-color: var(--primary-color-500);
+}
+
+.block:focus-visible .iconBlock .checkbox[data-priority='1'] + .label {
+    outline: 4px solid var(--neutral-color-400);
+    border-color: var(--neutral-color-800);
+}
+
+.block:focus-visible .iconBlock .checkbox[data-priority='2'] + .label {
+    outline: 4px solid var(--secondary-color-100);
+    border-color: var(--secondary-color-500);
+}
+
+.block:focus-visible .iconBlock .checkbox[data-priority='3'] + .label {
+    outline: 4px solid var(--primary-color-100);
+    border-color: var(--primary-color-500);
+}
+
+.text {
+    font-family: SourceSans3Regular;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--neutral-color-800)
+}

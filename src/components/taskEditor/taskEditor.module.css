@@ -1,0 +1,222 @@
+.header {
+    font-size: 32px;
+    font-family: SourceSans3Bold;
+    color: var(--neutral-color-800);
+    line-height: 40px;
+    transition: color 0.2s;
+}
+
+.text {
+    font-family: SourceSans3Bold;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--neutral-color-800);
+    transition: color 0.2s;
+}
+
+.block {
+    width: 100%;
+    height: calc(100vh - 64px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-color-100);
+    border-left: 1px solid var(--neutral-color-300);
+    border-top: 1px solid transparent;
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.4s, visibility 0.4s, opacity 0.4s;
+}
+
+.active {
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
+}
+
+.formBlock {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.inputBlock {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 23px;
+    padding: 24px 24px 24px 23px;
+}
+
+.span {
+    color: var(--primary-color-400)
+}
+
+.inputBar {
+    font-family: SourceSans3Regular;
+    font-weight: 400;
+    width: 100%;
+    border-radius: 8px;
+    height: 56px;
+    border: 1px solid var(--neutral-color-400);
+    padding: 16px 45px 16px 15px;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--neutral-color-800);
+    background-color: transparent;
+    transition: border-color 0.2s;
+}
+.inputBar:hover {
+    border-color: var(--neutral-color-600);
+}
+
+.inputBar:focus {
+    border: 1px solid var(--neutral-color-400);
+}
+
+.inputRow {
+    position: relative;
+}
+
+.iconButton {
+    position: absolute;
+    top: 16px;
+    right: 12px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+
+.priorityBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.flexBlock {
+    flex-grow: 1;
+    padding: 0px 24px 24px 23px;
+    overflow-y: auto;
+}
+
+.btnList {
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    background-color: var(--neutral-color-300);
+}
+
+.button:focus-visible {
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    background-color: var(--neutral-color-300);
+    outline-offset: 2px;
+    outline: 2px solid var(--neutral-color-800);
+}
+
+.btnActive {
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    background-color: var(--neutral-color-200);
+}
+
+.submitBlock {
+    height: 80px;
+    border-top: 1px solid var(--neutral-color-300);
+    display: flex;
+    align-items: flex-end;
+    padding: 16px 24px 16px 24px;
+    gap: 16px;
+}
+
+.submitBtn {
+    font-family: SourceSans3SemiBold;
+    font-size: 18px;
+    border-radius: 8px;
+    line-height: 24px;
+    padding: 12px 16px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    color: var(--neutral-color-800);
+    border: 0;
+    background-color: var(--neutral-color-200);
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: var(--neutral-color-300);
+}
+
+.submitBtn:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid var(--neutral-color-900);
+}
+
+.submitBtn:disabled {
+    background: rgba(243, 243, 243, 0.5);
+    color: rgba(28, 28, 28, 0.5);
+}
+
+[data-theme='dark'] .submitBtn:disabled {
+    background: rgba(38, 38, 38, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme='dark'] .createBtn:disabled {
+    background: rgba(250, 250, 250, 0.5);
+    color: rgba(20, 20, 20, 0.5);
+}
+
+.createBtn {
+    background-color: var(--neutral-color-800);
+    color: var(--neutral-color-0);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.createBtn:hover {
+    background-color: var(--neutral-color-700);
+}
+
+.createBtn:disabled {
+    background: rgba(28, 28, 28, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+[value='2'] {
+    --neutral-color-300: var(--secondary-color-100);
+    --neutral-color-200: var(--secondary-color-0);
+}
+
+[value='3'] {
+    --neutral-color-300: var(--primary-color-100);
+    --neutral-color-200: var(--primary-color-0);
+}

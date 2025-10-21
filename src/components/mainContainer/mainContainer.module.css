@@ -1,7 +1,7 @@
 .h1 {
-    font-size: 33px;
-    font-family: SourceSans3SemiBold;
-    color: var(--neutral--color-800);
+    font-size: 32px;
+    font-family: SourceSans3Bold;
+    color: var(--neutral-color-800);
     line-height: 40px;
     padding-left: clamp(0px, calc(0px + (160 * (100vw - 1600px)) / 320), 160px);
     transition: color 0.2s;
@@ -13,7 +13,7 @@
     position: sticky;
     background-color: var(--neutral-color-0);
     top: 0;
-    padding-top: 24px;
+    padding: 24px 24px;
     transition: background-color 0.2s;
 }
 
@@ -23,12 +23,5 @@
     flex-direction: column;
     display: flex;
     align-items: center;
-}
-
-.dark {
-    background-color: var(--neutral-dark-0);
-}
-
-.dark .h1 {
-    color: var(--neutral-dark-800)
+    padding: 0px 24px 24px;
 }

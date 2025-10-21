@@ -41,7 +41,7 @@ button:hover .active {
 }
 
 button:hover .active .toggle {
-    fill: var(--base-900)
+    fill: var(--base-900) 
 }
 
 .toggle {

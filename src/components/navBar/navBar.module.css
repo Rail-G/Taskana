@@ -8,20 +8,6 @@
     transition: background-color 0.2s, color 0.2s, fill 0.2s, border-color 0.2s;
 }
 
-.dark {
-    background-color: var(--neutral-dark-100);
-    border-right-color: var(--neutral-dark-300);
-}
-
-.dark .button {
-    background-color: var(--neutral-dark-800);
-    color: var(--neutral-dark-0)
-}
-
-.dark .button .icon {
-    fill: var(--neutral-dark-0)
-}
-
 .button {
     width: 100%;
     display: flex;
@@ -48,11 +34,6 @@
     box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
-.dark .button:hover {
-    background-color: var(--neutral-dark-700);
-    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.8);
-}
-
 .button:focus-visible {
     background-color: var(--neutral-color-700);
     outline: 2px solid var(--neutral-color-900);
@@ -60,16 +41,9 @@
     box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
-.dark .button:focus-visible {
-    background-color: var(--neutral-dark-700);
-    outline: 2px solid var(--neutral-dark-900);
-    outline-offset: 2px;
-    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.8);
-}
-
 .icon {
     margin-right: 3px;
     margin-left: 3px;
-    fill: var(--base-white);
+    fill: var(--neutral-color-0);
     transition: inherit;
 }
