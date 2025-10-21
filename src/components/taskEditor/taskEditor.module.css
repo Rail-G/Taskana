@@ -6,15 +6,6 @@
     transition: color 0.2s;
 }
 
-.text {
-    font-family: SourceSans3Bold;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--neutral-color-800);
-    transition: color 0.2s;
-}
-
 .block {
     width: 100%;
     height: calc(100vh - 64px);
@@ -48,14 +39,6 @@
     flex-grow: 1;
 }
 
-.inputBlock {
-    width: 100%;
-    position: sticky;
-    display: flex;
-    gap: 12px;
-    flex-direction: column;
-}
-
 .test {
     display: flex;
     flex-direction: column;
@@ -63,36 +46,6 @@
     justify-content: flex-start;
     gap: 23px;
     padding: 24px 24px 24px 23px;
-}
-
-.span {
-    color: var(--primary-color-400)
-}
-
-.inputBar {
-    font-family: SourceSans3Regular;
-    font-weight: 400;
-    width: 100%;
-    border-radius: 8px;
-    height: 56px;
-    border: 1px solid var(--neutral-color-400);
-    padding: 16px 45px 16px 15px;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--neutral-color-800);
-    background-color: transparent;
-    transition: border-color 0.2s;
-}
-.inputBar:hover {
-    border-color: var(--neutral-color-600);
-}
-
-.inputBar:focus {
-    border: 1px solid var(--neutral-color-400);
-}
-
-.inputRow {
-    position: relative;
 }
 
 .iconButton {
@@ -104,50 +57,10 @@
     border: 0;
 }
 
-.priorityBlock {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 16px;
-}
-
 .flexBlock {
     flex-grow: 1;
     padding: 0px 24px 24px 23px;
     overflow-y: auto;
-}
-
-.btnList {
-    list-style-type: none;
-    display: flex;
-    gap: 8px;
-}
-
-.button {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    background-color: transparent;
-    padding: 8px;
-    border: 0;
-    cursor: pointer;
-}
-
-.button:hover {
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    background-color: var(--neutral-color-300);
-}
-
-.button:focus-visible {
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    background-color: var(--neutral-color-300);
-    outline-offset: 2px;
-    outline: 2px solid var(--neutral-color-800);
-}
-
-.btnActive {
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
-    background-color: var(--neutral-color-200);
 }
 
 .submitBlock {
@@ -209,14 +122,4 @@
 .createBtn:disabled {
     background: rgba(28, 28, 28, 0.5);
     color: rgba(255, 255, 255, 0.5);
-}
-
-[value='2'] {
-    --neutral-color-300: var(--secondary-color-100);
-    --neutral-color-200: var(--secondary-color-0);
-}
-
-[value='3'] {
-    --neutral-color-300: var(--primary-color-100);
-    --neutral-color-200: var(--primary-color-0);
 }
