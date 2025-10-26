@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import Icon from "../icon/Icon";
 import styles from './themeSwitcher.module.css'
-import { ThemeContext } from "../../context/AppContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 export default function ThemeSwitcher() {
     const { theme, changeTheme } = useContext(ThemeContext)

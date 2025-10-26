@@ -6,15 +6,16 @@
     padding: 8px;
     border: 0;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .button:hover {
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
     background-color: var(--neutral-color-300);
 }
 
 .button:focus-visible {
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
     background-color: var(--neutral-color-300);
     outline-offset: 2px;
     outline: 2px solid var(--neutral-color-800);

@@ -39,13 +39,13 @@
     flex-grow: 1;
 }
 
-.test {
+.headBlock {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 23px;
-    padding: 24px 24px 24px 23px;
+    padding: 24px 24px 21px 23px;
 }
 
 .iconButton {
@@ -59,7 +59,7 @@
 
 .flexBlock {
     flex-grow: 1;
-    padding: 0px 24px 24px 23px;
+    padding: 3px 24px 24px 23px;
     overflow-y: auto;
 }
 
@@ -87,11 +87,13 @@
 
 .submitBtn:hover {
     background-color: var(--neutral-color-300);
+    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
 .submitBtn:focus-visible {
     outline-offset: 2px;
     outline: 2px solid var(--neutral-color-900);
+    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
 .submitBtn:disabled {

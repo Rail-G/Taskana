@@ -16,7 +16,7 @@ export default function TaskInput({ task, onChange, inputRef, setTask }) {
                     placeholder='Новые задачи'
                 />
                 {!!task && (
-                    <button className={styles.iconButton} onClick={clearInput}>
+                    <button type="button" className={styles.iconButton} onClick={clearInput}>
                         <Icon name='xmark' />
                     </button>
                 )}

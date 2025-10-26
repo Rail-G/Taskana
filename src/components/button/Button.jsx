@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import Icon from '../icon/Icon'
 import styles from './button.module.css'
-import { ThemeContext } from '../../context/AppContext'
+import { ThemeContext } from '../../context/ThemeContext'
 export default function Button() {
     const {create, createToggle} = useContext(ThemeContext)
     return (

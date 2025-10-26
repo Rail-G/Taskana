@@ -1,5 +1,5 @@
 .navBar {
-    width: 204px;
+    min-width: 204px;
     height: calc(100vh - 64px);
     overflow-y: auto;
     padding: 24px 16px 24px 16px;

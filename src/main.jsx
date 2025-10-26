@@ -2,12 +2,15 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './assets/styles/global.css'
 import AppLayout from './layouts/AppLayout'
-import AppContext from './context/AppContext'
+import ThemeProvider from './context/ThemeContext'
+import TaskProvider from './context/TaskContext'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AppContext>
-      <AppLayout />
-    </AppContext>
+    <ThemeProvider>
+      <TaskProvider>
+        <AppLayout />
+      </TaskProvider>
+    </ThemeProvider>
   </StrictMode>
 )

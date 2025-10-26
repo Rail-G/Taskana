@@ -1,4 +1,3 @@
-import Icon from '../icon/Icon'
 import styles from './task.module.css'
 
 export default function Task({task}) {

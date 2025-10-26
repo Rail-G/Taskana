@@ -1,18 +1,26 @@
 import { useContext, useEffect, useRef, useState } from 'react'
-import Icon from '../icon/Icon'
 import styles from './taskEditor.module.css'
-import { ThemeContext } from '../../context/AppContext'
+import { ThemeContext } from '../../context/ThemeContext'
 import createId from '../../utils/createId'
 import TaskInput from '../taskInput/TaskInput'
 import PrioritySelector from '../prioritySelector/PrioritySelector'
+import { TaskContext } from '../../context/TaskContext'
 
 export default function TaskEditor() {
-    const { create, createToggle, setTasks } = useContext(ThemeContext)
+    const { create, createToggle } = useContext(ThemeContext)
+    const { setTasks } = useContext(TaskContext)
     const [task, setTask] = useState('')
     const [selectedBtn, setSelectedBtn] = useState('1')
     const inputRef = useRef(null)
     const onChangeBtn = (id) => setSelectedBtn(id)
-    const onChange = (event) => setTask(event.target.value)
+    const onChange = (event) => {
+        const value = event.target.value.trim()
+        if (value) {
+            setTask(event.target.value)
+        } else {
+            setTask('')
+        }
+    }
     const cancelBtn = () => {
         createToggle()
         setTask('')
@@ -37,7 +45,7 @@ export default function TaskEditor() {
     return (
         <div className={`${styles.block} ${create && styles.active}`}>
             <form className={styles.formBlock} onSubmit={onSubmit} noValidate>
-                <div className={styles.test}>
+                <div className={styles.headBlock}>
                     <h1 className={styles.header}>Создание задачи</h1>
                     <TaskInput task={task} onChange={onChange} inputRef={inputRef} setTask={setTask} />
                 </div>
@@ -45,7 +53,7 @@ export default function TaskEditor() {
                     <PrioritySelector selectedBtn={selectedBtn} onChangeBtn={onChangeBtn} />
                 </div>
                 <div className={styles.submitBlock}>
-                    <button type='submit' className={`${styles.submitBtn} ${styles.createBtn}`} disabled={!!!task}>Создать</button>
+                    <button type='submit' className={`${styles.submitBtn} ${styles.createBtn}`} disabled={!task}>Создать</button>
                     <button type='button' className={styles.submitBtn} onClick={cancelBtn}>Отмена</button>
                 </div>
             </form>

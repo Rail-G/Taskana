@@ -3,10 +3,10 @@ import Content from "../content/Content";
 import TaskList from "../taskList/TaskList";
 import EmptyContainer from "./emptyContainer/EmptyContainer";
 import styles from './mainContainer.module.css'
-import { ThemeContext } from "../../context/AppContext";
+import { TaskContext } from "../../context/TaskContext";
 
 export default function MainContainer() {
-    const {tasks} = useContext(ThemeContext)
+    const {tasks} = useContext(TaskContext)
     return (
         <Content>
             <div className={styles.header}>
