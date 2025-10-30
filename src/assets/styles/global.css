@@ -27,6 +27,14 @@ body {
     overflow-y: hidden;
 }
 
+.sortIcon {
+    transition: inherit;
+}
+
+.sortIcon path {
+    transition: fill 0.2s;
+}
+
 [data-theme='dark'] {
     --neutral-color-0: rgba(20, 20, 20, 100%);
     --neutral-color-100: rgba(28, 28, 28, 100%);

@@ -1,0 +1,129 @@
+.block {
+    position: relative;
+    transition: color 0.2s, background-color 0.2s;
+    display: flex;
+}
+
+.button {
+    padding: 8px 8px 8px 12px;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--neutral-color-200);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    color: var(--neutral-color-800);
+    font-family: SourceSans3SemiBold;
+    font-size: 16px;
+    line-height: 24px;
+    width: 210px;
+    height: 40px;
+    overflow-y: hidden;
+    cursor: pointer;
+    transition: inherit;
+}
+
+.unSelected {
+    color: var(--neutral-color-600);
+}
+
+.unSelected svg path {
+    fill: var(--neutral-color-600);
+}
+
+.button:hover {
+    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.button:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid var(--neutral-color-900);
+    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.sortBlock {
+    border-radius: 8px;
+    background-color: var(--neutral-color-0);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 211px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transform: translateY(-4%);
+    opacity: 0;
+    visibility: hidden;
+    transition: color 0.2s, background-color 0.2s, transform 0.2s, opacity 0.2s, visibility 0.2s;
+}
+
+.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.headerBlock {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    height: 40px;
+    transition: inherit;
+}
+
+.sortHeader {
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--neutral-color-800);
+    font-family: SourceSans3Bold;
+    transition: inherit;
+}
+
+.sortList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-grow: 1;
+    transition: inherit;
+}
+
+.sortList li {
+    width: 100%;
+    transition: inherit;
+}
+
+.sortButton {
+    padding: 8px 8px 8px 7px;
+    border: 0;
+    border-radius: 4px;
+    font-family: SourceSans3Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--neutral-color-800);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    gap: 8px;
+    cursor: pointer;
+    transition: inherit;
+}
+
+.sortButton span, .button span {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}

@@ -22,7 +22,7 @@
     transform: translateX(100%);
     visibility: hidden;
     opacity: 0;
-    transition: background-color 0.2s, border-color 0.2s, transform 0.4s, visibility 0.4s, opacity 0.4s;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.4s, visibility 0.4s, opacity 0.4s, box-shadow 0.2s;
 }
 
 .active {
@@ -37,6 +37,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    transition: inherit;
 }
 
 .headBlock {
@@ -70,6 +71,7 @@
     align-items: flex-end;
     padding: 16px 24px 16px 24px;
     gap: 16px;
+    transition: inherit;
 }
 
 .submitBtn {
@@ -83,6 +85,7 @@
     border: 0;
     background-color: var(--neutral-color-200);
     cursor: pointer;
+    transition: inherit;
 }
 
 .submitBtn:hover {
@@ -99,6 +102,39 @@
 .submitBtn:disabled {
     background: rgba(243, 243, 243, 0.5);
     color: rgba(28, 28, 28, 0.5);
+}
+
+.trashBtn {
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 48px;
+    background-color: var(--neutral-color-200);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    transition: inherit;
+    margin-left: auto;
+}
+
+.trashBtn:hover {
+    background-color: var(--primary-color-400);
+    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.trashBtn:focus-visible {
+    background-color: var(--primary-color-400);
+    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+    outline-offset: 2px;
+    outline: 2px solid var(--neutral-color-900);
+}
+
+.trashBtn:active {
+    background-color: var(--primary-color-300);
+    box-shadow: 0;
+}
+
+.trashBtn:hover svg path, .trashBtn:focus-visible svg path, .trashBtn:active svg path {
+    fill: var(--neutral-color-0)
 }
 
 [data-theme='dark'] .submitBtn:disabled {
@@ -124,4 +160,8 @@
 .createBtn:disabled {
     background: rgba(28, 28, 28, 0.5);
     color: rgba(255, 255, 255, 0.5);
+}
+
+.createBtn:active {
+    background-color: var(--neutral-color-600);
 }

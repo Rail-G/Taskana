@@ -88,4 +88,33 @@
     font-weight: 400;
     color: var(--neutral-color-800);
     transition: color 0.2s;
+    width: 100%;
 }
+
+.editButton {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: inherit;
+}
+
+.editButton:hover {
+    background-color: var(--neutral-color-300);
+    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.editButton:focus-visible {
+    outline-offset: 2px;
+    background-color: var(--neutral-color-300);
+    outline: 2px solid var(--neutral-color-900);
+    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.editButton:hover svg path, .editButton:focus-visible svg path {
+    fill: var(--neutral-color-800)
+}
+
