@@ -5,11 +5,10 @@
     display: flex;
     gap: 16px;
     justify-content: flex-start;
-    align-items: center;
     border-radius: 8px;
 }
 
-.block:hover {
+.block:hover, .active {
     background-color: var(--neutral-color-100);
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
@@ -36,7 +35,7 @@
     display: inline-block;
     border-radius: 4px;
     position: absolute;
-    top: 2px;
+    top: 10px;
     left: 2px;
     border: 1.5px solid transparent;
     cursor: pointer;
@@ -89,11 +88,14 @@
     color: var(--neutral-color-800);
     transition: color 0.2s;
     width: 100%;
+    padding: 8px 0px;
+    overflow-wrap: anywhere;
 }
 
 .editButton {
     width: 40px;
     height: 40px;
+    opacity: 0;
     background-color: transparent;
     border: 0;
     border-radius: 8px;
@@ -102,9 +104,17 @@
     transition: inherit;
 }
 
+.block:hover .editButton,
+.block:focus-visible .editButton,
+.activeEdit
+{
+    opacity: 1;
+}
+
 .editButton:hover {
     background-color: var(--neutral-color-300);
     box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+    opacity: 1;
 }
 
 .editButton:focus-visible {
@@ -112,6 +122,7 @@
     background-color: var(--neutral-color-300);
     outline: 2px solid var(--neutral-color-900);
     box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+    opacity: 1;
 }
 
 .editButton:hover svg path, .editButton:focus-visible svg path {

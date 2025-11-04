@@ -9,7 +9,7 @@ import { sortItems } from '../../utils/sortItems'
 import { DropDownContext } from '../../context/DropDownContext'
 
 export default function TaskEditor() {
-    const { setTasks, editType, create, createToggle } = useContext(TaskContext)
+    const { setTasks, editType, create, createToggle, onClickChangeType } = useContext(TaskContext)
     const { dropDown } = useContext(DropDownContext)
     const [task, setTask] = useState('')
     const [selectedBtn, setSelectedBtn] = useState('1')
@@ -25,7 +25,7 @@ export default function TaskEditor() {
     }
     const cancelBtn = () => {
         createToggle()
-        setTask('')
+        onClickChangeType('edit')
         setSelectedBtn('1')
     }
 
@@ -46,6 +46,7 @@ export default function TaskEditor() {
             })
             return sortItems(updatedTasks, dropDown.sortBy, dropDown.orderBy)
         })
+        onClickChangeType('edit')
         cancelBtn()
     }
 
@@ -53,6 +54,7 @@ export default function TaskEditor() {
         setTasks(prev => {
             return prev.filter(item => item.id !== editType.task.id)
         })
+        onClickChangeType('edit')
         cancelBtn()
     }
 
@@ -72,7 +74,7 @@ export default function TaskEditor() {
         if (editType.type == 'create') {
             setTask('')
             setSelectedBtn('1')
-        } else if (editType.type == 'edit') {
+        } else if (editType.type == 'edit' && editType.task) {
             setTask(editType.task.title)
             setSelectedBtn(String(editType.task.priority))
             inputRef.current.focus();
@@ -82,14 +84,14 @@ export default function TaskEditor() {
         <div className={`${styles.block} ${create && styles.active}`}>
             <form className={styles.formBlock} onSubmit={editType.type == 'edit' ? onSubmitEdit : onSubmitCreate} noValidate>
                 <div className={styles.headBlock}>
-                    <h1 className={styles.header}>Создание задачи</h1>
+                    <h1 className={styles.header}>{editType.type == 'edit' ? 'Редактировать' : 'Создание задачи'}</h1>
                     <TaskInput task={task} onChange={onChange} inputRef={inputRef} setTask={setTask} />
                 </div>
                 <div className={styles.flexBlock}>
                     <PrioritySelector selectedBtn={selectedBtn} onChangeBtn={onChangeBtn} />
                 </div>
                 <div className={styles.submitBlock}>
-                    <button type='submit' className={`${styles.submitBtn} ${styles.createBtn}`} disabled={(editType.task.title == task && editType.task.priority == selectedBtn) ? task : !task}>Создать</button>
+                    <button type='submit' className={`${styles.submitBtn} ${styles.createBtn}`} disabled={(editType.task?.title == task && editType.task?.priority == selectedBtn) ? task : !task}>{editType.type == 'edit' ? 'Сохранить' : 'Создать'}</button>
                     <button type='button' className={styles.submitBtn} onClick={cancelBtn}>Отмена</button>
                     {editType.type == 'edit' && <button type='button' className={styles.trashBtn} onClick={onClickToDelete}><Icon name="trash" /></button>}
                 </div>

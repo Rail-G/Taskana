@@ -26,6 +26,7 @@
 .button:focus-visible {
     outline: 2px solid var(--base-white);
     outline-offset: 2px;
+    background-color: var(--primary-color-500);
 }
 
 .button:disabled {

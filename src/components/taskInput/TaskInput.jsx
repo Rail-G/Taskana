@@ -13,7 +13,7 @@ export default function TaskInput({ task, onChange, inputRef, setTask }) {
                     ref={inputRef}
                     value={task}
                     onChange={onChange}
-                    placeholder='Новые задачи'
+                    placeholder='Название задачи'
                 />
                 {!!task && (
                     <button type="button" className={styles.iconButton} onClick={clearInput}>

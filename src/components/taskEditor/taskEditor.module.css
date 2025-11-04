@@ -22,7 +22,7 @@
     transform: translateX(100%);
     visibility: hidden;
     opacity: 0;
-    transition: background-color 0.2s, border-color 0.2s, transform 0.4s, visibility 0.4s, opacity 0.4s, box-shadow 0.2s;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.4s, visibility 0.4s, opacity 0.4s, box-shadow 0.2s, color 0.2s;
 }
 
 .active {
@@ -38,15 +38,24 @@
     flex-direction: column;
     flex-grow: 1;
     transition: inherit;
+    overflow-y: auto;
+    position: relative;
 }
 
 .headBlock {
     display: flex;
+    height: 204px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 23px;
     padding: 24px 24px 21px 23px;
+    background-color: var(--neutral-color-100);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 16px;
+    z-index: 4;
 }
 
 .iconButton {
@@ -59,9 +68,8 @@
 }
 
 .flexBlock {
-    flex-grow: 1;
-    padding: 3px 24px 24px 23px;
-    overflow-y: auto;
+    padding: 3px 24px 104px 23px;
+
 }
 
 .submitBlock {
@@ -72,6 +80,11 @@
     padding: 16px 24px 16px 24px;
     gap: 16px;
     transition: inherit;
+    background-color: var(--neutral-color-100);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 16px;
 }
 
 .submitBtn {

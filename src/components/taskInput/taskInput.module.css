@@ -35,7 +35,7 @@
     line-height: 24px;
     color: var(--neutral-color-800);
     background-color: transparent;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s, color 0.2s;
 }
 .inputBar:hover {
     border-color: var(--neutral-color-600);
@@ -48,10 +48,16 @@
 }
 
 .iconButton {
+    width: 24px;
+    height: 24px;
     position: absolute;
     top: 16px;
     right: 12px;
     cursor: pointer;
     background-color: transparent;
     border: 0;
+}
+
+.iconButton:hover svg path {
+    fill: var(--neutral-color-800)
 }

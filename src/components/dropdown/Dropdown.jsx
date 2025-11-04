@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Icon from '../icon/Icon'
 import styles from './dropdown.module.css'
 import { DropDownContext } from '../../context/DropDownContext'
@@ -9,6 +9,7 @@ export default function Dropdown() {
     const [unSelect, setunSelect] = useState(true)
     const [activeList, setActiveList] = useState(false)
     const [title, setTitle] = useState('По дате создания')
+    const btnStyle = styles.button
     const onClickListItem = (event, title, sortBy, orderBy) => {
         setActiveList(false)
         setSelected(event.target.name)
@@ -19,9 +20,17 @@ export default function Dropdown() {
         setActiveList(!activeList)
         setunSelect(false)
     }
+    useEffect(() => {
+        document.documentElement.addEventListener('mousedown', (e) => {
+            if (e.target.classList.contains(btnStyle)) {
+                return
+            }
+            setActiveList(false)
+        })
+    }, [])
     return (
         <div className={styles.block}>
-            <button className={`${styles.button} ${unSelect && styles.unSelected}`} onClick={onClickSortButton}>
+            <button className={`${btnStyle} ${unSelect && styles.unSelected}`} onClick={onClickSortButton}>
                 <Icon name={selected} />
                 {title}
                 <span>

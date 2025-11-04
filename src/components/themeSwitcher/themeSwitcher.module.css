@@ -36,11 +36,11 @@
     fill: var(--base-white)
 }
 
-button:hover .active {
+.button:hover .active, .button:focus-visible .active {
     background-color: var(--base-white);
 }
 
-button:hover .active .toggle {
+.button:hover .active .toggle, .button:focus-visible .active .toggle {
     fill: var(--base-900) 
 }
 

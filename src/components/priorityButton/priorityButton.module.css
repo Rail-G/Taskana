@@ -6,7 +6,7 @@
     padding: 8px;
     border: 0;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, fill 0.2s;
 }
 
 .button:hover {
