@@ -1,180 +1,190 @@
 .header {
-    font-size: 32px;
-    font-family: SourceSans3Bold;
-    color: var(--neutral-color-800);
-    line-height: 40px;
-    transition: color 0.2s;
+  font-size: 32px;
+  font-family: SourceSans3Bold;
+  color: var(--neutral-color-800);
+  line-height: 40px;
+  transition: color 0.2s;
 }
 
 .block {
-    width: 100%;
-    height: calc(100vh - 64px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--neutral-color-100);
-    border-left: 1px solid var(--neutral-color-300);
-    border-top: 1px solid transparent;
-    transform: translateX(100%);
-    visibility: hidden;
-    opacity: 0;
-    transition: background-color 0.2s, border-color 0.2s, transform 0.4s, visibility 0.4s, opacity 0.4s, box-shadow 0.2s, color 0.2s;
+  width: 100%;
+  height: calc(100vh - 64px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral-color-100);
+  border-left: 1px solid var(--neutral-color-300);
+  border-top: 1px solid transparent;
+  transform: translateX(100%);
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s,
+    transform 0.4s,
+    visibility 0.4s,
+    opacity 0.4s,
+    box-shadow 0.2s,
+    color 0.2s;
 }
 
 .active {
-    transform: translateX(0%);
-    visibility: visible;
-    opacity: 1;
+  transform: translateX(0%);
+  visibility: visible;
+  opacity: 1;
 }
 
 .formBlock {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    transition: inherit;
-    overflow-y: auto;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  transition: inherit;
+  overflow-y: auto;
+  position: relative;
 }
 
 .headBlock {
-    display: flex;
-    height: 204px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 23px;
-    padding: 24px 24px 21px 23px;
-    background-color: var(--neutral-color-100);
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 16px;
-    z-index: 4;
+  display: flex;
+  height: 204px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 23px;
+  padding: 24px 24px 21px 23px;
+  background-color: var(--neutral-color-100);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 16px;
+  z-index: 4;
+  transition: inherit;
 }
 
 .iconButton {
-    position: absolute;
-    top: 16px;
-    right: 12px;
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
 }
 
 .flexBlock {
-    padding: 3px 24px 104px 23px;
-
+  padding: 3px 24px 104px 23px;
 }
 
 .submitBlock {
-    height: 80px;
-    border-top: 1px solid var(--neutral-color-300);
-    display: flex;
-    align-items: flex-end;
-    padding: 16px 24px 16px 24px;
-    gap: 16px;
-    transition: inherit;
-    background-color: var(--neutral-color-100);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 16px;
+  height: 80px;
+  border-top: 1px solid var(--neutral-color-300);
+  display: flex;
+  align-items: flex-end;
+  padding: 16px 8px 16px 24px;
+  gap: 16px;
+  transition: inherit;
+  background-color: var(--neutral-color-100);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 16px;
 }
 
 .submitBtn {
-    font-family: SourceSans3SemiBold;
-    font-size: 18px;
-    border-radius: 8px;
-    line-height: 24px;
-    padding: 12px 16px;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
-    color: var(--neutral-color-800);
-    border: 0;
-    background-color: var(--neutral-color-200);
-    cursor: pointer;
-    transition: inherit;
+  font-family: SourceSans3SemiBold;
+  font-size: 18px;
+  border-radius: 8px;
+  line-height: 24px;
+  padding: 12px 16px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  color: var(--neutral-color-800);
+  border: 0;
+  background-color: var(--neutral-color-200);
+  cursor: pointer;
+  transition: inherit;
 }
 
 .submitBtn:hover {
-    background-color: var(--neutral-color-300);
-    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(--neutral-color-300);
+  box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
 .submitBtn:focus-visible {
-    outline-offset: 2px;
-    outline: 2px solid var(--neutral-color-900);
-    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  outline-offset: 2px;
+  outline: 2px solid var(--neutral-color-900);
+  box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
 .submitBtn:disabled {
-    background: rgba(243, 243, 243, 0.5);
-    color: rgba(28, 28, 28, 0.5);
+  background: rgba(243, 243, 243, 0.5);
+  color: rgba(28, 28, 28, 0.5);
+  box-shadow: none;
 }
 
 .trashBtn {
-    padding: 12px;
-    border: 0;
-    border-radius: 8px;
-    cursor: pointer;
-    height: 48px;
-    background-color: var(--neutral-color-200);
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
-    transition: inherit;
-    margin-left: auto;
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 48px;
+  background-color: var(--neutral-color-200);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  transition: inherit;
+  margin-left: auto;
 }
 
 .trashBtn:hover {
-    background-color: var(--primary-color-400);
-    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-color-400);
+  box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
 .trashBtn:focus-visible {
-    background-color: var(--primary-color-400);
-    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
-    outline-offset: 2px;
-    outline: 2px solid var(--neutral-color-900);
+  background-color: var(--primary-color-400);
+  box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  outline-offset: 2px;
+  outline: 2px solid var(--neutral-color-900);
 }
 
 .trashBtn:active {
-    background-color: var(--primary-color-300);
-    box-shadow: 0;
+  background-color: var(--primary-color-300);
+  box-shadow: 0;
 }
 
-.trashBtn:hover svg path, .trashBtn:focus-visible svg path, .trashBtn:active svg path {
-    fill: var(--neutral-color-0)
+.trashBtn:hover svg path,
+.trashBtn:focus-visible svg path,
+.trashBtn:active svg path {
+  fill: var(--neutral-color-0);
 }
 
-[data-theme='dark'] .submitBtn:disabled {
-    background: rgba(38, 38, 38, 0.5);
-    color: rgba(255, 255, 255, 0.5);
+[data-theme="dark"] .submitBtn:disabled {
+  background: rgba(38, 38, 38, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
-[data-theme='dark'] .createBtn:disabled {
-    background: rgba(250, 250, 250, 0.5);
-    color: rgba(20, 20, 20, 0.5);
+[data-theme="dark"] .createBtn:disabled {
+  background: rgba(250, 250, 250, 0.5);
+  color: rgba(20, 20, 20, 0.5);
 }
 
 .createBtn {
-    background-color: var(--neutral-color-800);
-    color: var(--neutral-color-0);
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(--neutral-color-800);
+  color: var(--neutral-color-0);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .createBtn:hover {
-    background-color: var(--neutral-color-700);
+  background-color: var(--neutral-color-700);
 }
 
 .createBtn:disabled {
-    background: rgba(28, 28, 28, 0.5);
-    color: rgba(255, 255, 255, 0.5);
+  background: rgba(28, 28, 28, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .createBtn:active {
-    background-color: var(--neutral-color-600);
+  background-color: var(--neutral-color-600);
 }

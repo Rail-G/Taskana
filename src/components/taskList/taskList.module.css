@@ -1,9 +1,8 @@
 .taskList {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 7px;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 7px;
 }
-

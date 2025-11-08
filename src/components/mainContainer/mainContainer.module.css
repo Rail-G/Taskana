@@ -1,28 +1,28 @@
 .h1 {
-    font-size: 32px;
-    font-family: SourceSans3Bold;
-    color: var(--neutral-color-800);
-    line-height: 40px;
-    transition: color 0.2s;
+  font-size: 32px;
+  font-family: SourceSans3Bold;
+  color: var(--neutral-color-800);
+  line-height: 40px;
+  transition: color 0.2s;
 }
 
 .header {
-    width: 100%;
-    z-index: 4;
-    position: sticky;
-    background-color: var(--neutral-color-0);
-    top: 0;
-    padding: 24px 24px 21px;
-    transition: background-color 0.2s;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  z-index: 4;
+  position: sticky;
+  background-color: var(--neutral-color-0);
+  top: 0;
+  padding: 24px 24px 21px;
+  transition: background-color 0.2s;
+  display: flex;
+  justify-content: space-between;
 }
 
 .board {
-    width: 100%;
-    flex-grow: 1;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    padding: 3px 24px 24px;
+  width: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 3px 24px 24px;
 }

@@ -1,131 +1,132 @@
 .block {
-    width: 100%;
-    min-height: 56px;
-    padding: 9px 8px 8px 16px;
-    display: flex;
-    gap: 16px;
-    justify-content: flex-start;
-    border-radius: 8px;
+  width: 100%;
+  min-height: 56px;
+  padding: 9px 8px 8px 16px;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
 }
 
-.block:hover, .active {
-    background-color: var(--neutral-color-100);
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+.block:hover,
+.active {
+  background-color: var(--neutral-color-100);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .block:focus-visible {
-    background-color: var(--neutral-color-100);
-    outline: 2px solid var(--neutral-color-900);
-    outline-offset: 2px;
+  background-color: var(--neutral-color-100);
+  outline: 2px solid var(--neutral-color-900);
+  outline-offset: 2px;
 }
 
 .iconBlock {
-    min-width: 24px;
-    min-height: 24px;
-    position: relative;
+  min-width: 24px;
+  min-height: 24px;
+  position: relative;
 }
 
 .checkbox {
-    display: none
+  display: none;
 }
 
 .label {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    border-radius: 4px;
-    position: absolute;
-    top: 10px;
-    left: 2px;
-    border: 1.5px solid transparent;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
 }
 
-.checkbox[data-priority='1'] + .label {
-    border-color: var(--neutral-color-400);
+.checkbox[data-priority="1"] + .label {
+  border-color: var(--neutral-color-400);
 }
 
-.checkbox[data-priority='2'] + .label {
-    border-color: var(--secondary-color-300);
+.checkbox[data-priority="2"] + .label {
+  border-color: var(--secondary-color-300);
 }
 
-.checkbox[data-priority='3'] + .label {
-    border-color: var(--primary-color-300);
+.checkbox[data-priority="3"] + .label {
+  border-color: var(--primary-color-300);
 }
 
-.checkbox[data-priority='1'] + .label:hover {
-    border-color: var(--neutral-color-800);
+.checkbox[data-priority="1"] + .label:hover {
+  border-color: var(--neutral-color-800);
 }
 
-.checkbox[data-priority='2'] + .label:hover {
-    border-color: var(--secondary-color-500);
+.checkbox[data-priority="2"] + .label:hover {
+  border-color: var(--secondary-color-500);
 }
 
-.checkbox[data-priority='3'] + .label:hover {
-    border-color: var(--primary-color-500);
+.checkbox[data-priority="3"] + .label:hover {
+  border-color: var(--primary-color-500);
 }
 
-.block:focus-visible .iconBlock .checkbox[data-priority='1'] + .label {
-    outline: 4px solid var(--neutral-color-400);
-    border-color: var(--neutral-color-800);
+.block:focus-visible .iconBlock .checkbox[data-priority="1"] + .label {
+  outline: 4px solid var(--neutral-color-400);
+  border-color: var(--neutral-color-800);
 }
 
-.block:focus-visible .iconBlock .checkbox[data-priority='2'] + .label {
-    outline: 4px solid var(--secondary-color-100);
-    border-color: var(--secondary-color-500);
+.block:focus-visible .iconBlock .checkbox[data-priority="2"] + .label {
+  outline: 4px solid var(--secondary-color-100);
+  border-color: var(--secondary-color-500);
 }
 
-.block:focus-visible .iconBlock .checkbox[data-priority='3'] + .label {
-    outline: 4px solid var(--primary-color-100);
-    border-color: var(--primary-color-500);
+.block:focus-visible .iconBlock .checkbox[data-priority="3"] + .label {
+  outline: 4px solid var(--primary-color-100);
+  border-color: var(--primary-color-500);
 }
 
 .text {
-    font-family: SourceSans3Regular;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    color: var(--neutral-color-800);
-    transition: color 0.2s;
-    width: 100%;
-    padding: 8px 0px;
-    overflow-wrap: anywhere;
+  font-family: SourceSans3Regular;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--neutral-color-800);
+  transition: color 0.2s;
+  width: 100%;
+  padding: 8px 0px;
+  overflow-wrap: anywhere;
 }
 
 .editButton {
-    width: 40px;
-    height: 40px;
-    opacity: 0;
-    background-color: transparent;
-    border: 0;
-    border-radius: 8px;
-    padding: 8px;
-    cursor: pointer;
-    transition: inherit;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: inherit;
 }
 
 .block:hover .editButton,
 .block:focus-visible .editButton,
-.activeEdit
-{
-    opacity: 1;
+.activeEdit {
+  opacity: 1;
 }
 
 .editButton:hover {
-    background-color: var(--neutral-color-300);
-    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
-    opacity: 1;
+  background-color: var(--neutral-color-300);
+  box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  opacity: 1;
 }
 
 .editButton:focus-visible {
-    outline-offset: 2px;
-    background-color: var(--neutral-color-300);
-    outline: 2px solid var(--neutral-color-900);
-    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
-    opacity: 1;
+  outline-offset: 2px;
+  background-color: var(--neutral-color-300);
+  outline: 2px solid var(--neutral-color-900);
+  box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  opacity: 1;
 }
 
-.editButton:hover svg path, .editButton:focus-visible svg path {
-    fill: var(--neutral-color-800)
+.editButton:hover svg path,
+.editButton:focus-visible svg path {
+  fill: var(--neutral-color-800);
 }
-

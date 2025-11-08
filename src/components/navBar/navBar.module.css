@@ -1,49 +1,53 @@
 .navBar {
-    min-width: 204px;
-    height: calc(100vh - 64px);
-    overflow-y: auto;
-    padding: 24px 16px 24px 16px;
-    background-color: var(--neutral-color-100);
-    border-right: 1px solid var(--neutral-color-300, rgba(236, 236, 236, 0.878));
-    transition: background-color 0.2s, color 0.2s, fill 0.2s, border-color 0.2s;
+  min-width: 204px;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+  padding: 24px 16px 24px 16px;
+  background-color: var(--neutral-color-100);
+  border-right: 1px solid var(--neutral-color-300, rgba(236, 236, 236, 0.878));
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    fill 0.2s,
+    border-color 0.2s;
 }
 
 .button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    background-color: var(--neutral-color-800);
-    font-family: SourceSans3SemiBold;
-    font-size: 16px;
-    line-height: 28px;
-    padding: 6px 8px 6px 8px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--neutral-color-0);
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    outline: 0px solid transparent;
-    outline-offset: 0;
-    transition: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background-color: var(--neutral-color-800);
+  font-family: SourceSans3SemiBold;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 6px 8px 6px 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--neutral-color-0);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  outline: 0px solid transparent;
+  outline-offset: 0;
+  transition: inherit;
 }
 
 .button:hover {
-    background-color: var(--neutral-color-700);
-    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  background-color: var(--neutral-color-700);
+  box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
 .button:focus-visible {
-    background-color: var(--neutral-color-700);
-    outline: 2px solid var(--neutral-color-900);
-    outline-offset: 2px;
-    box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  background-color: var(--neutral-color-700);
+  outline: 2px solid var(--neutral-color-900);
+  outline-offset: 2px;
+  box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
 .icon {
-    margin-right: 3px;
-    margin-left: 3px;
-    fill: var(--neutral-color-0);
-    transition: inherit;
+  margin-right: 3px;
+  margin-left: 3px;
+  fill: var(--neutral-color-0);
+  transition: inherit;
 }

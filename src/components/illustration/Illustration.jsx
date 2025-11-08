@@ -1,15 +1,13 @@
-import SideImg from "./illustrations/SideImg"
-import TaskImg from "./illustrations/TaskImg"
+import SideImg from "./illustrations/SideImg";
+import TaskImg from "./illustrations/TaskImg";
 
 export default function Illustration({name, ...props}) {
-    const illustrations = {
-        side: SideImg,
-        task: TaskImg
-    }  
+  const illustrations = {
+    side: SideImg,
+    task: TaskImg,
+  };
 
-    const CurrentIllustration = illustrations[name]
+  const CurrentIllustration = illustrations[name];
 
-    return (
-        <CurrentIllustration {...props} />
-    )
+  return <CurrentIllustration {...props} />;
 }

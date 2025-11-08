@@ -1,55 +1,55 @@
 .empty {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
-    position: sticky;
-    top: 0;
-    transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  position: sticky;
+  top: 0;
+  transition: all 0.2s;
 }
 
 .h2 {
-    font-family: SourceSans3Bold;
-    font-weight: 700;
-    line-height: 32px;
+  font-family: SourceSans3Bold;
+  font-weight: 700;
+  line-height: 32px;
 }
 
 .text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 16px;
-    color: var(--neutral-color-800);
-    transition: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--neutral-color-800);
+  transition: inherit;
 }
 
 .span {
-    font-family: SourceSans3Regular;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+  font-family: SourceSans3Regular;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .block {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon { 
-    transition: inherit;
+.icon {
+  transition: inherit;
 }
 
 .iconWoman {
-    transition: inherit;
-    fill: var(--neutral-color-900);
+  transition: inherit;
+  fill: var(--neutral-color-900);
 }
 
 .iconBorder {
-    transition: inherit;
-    fill: var(--neutral-color-300);
+  transition: inherit;
+  fill: var(--neutral-color-300);
 }

@@ -1,31 +1,31 @@
 .priorityBlock {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
 }
 
 .text {
-    font-family: SourceSans3Bold;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--neutral-color-800);
-    transition: color 0.2s;
+  font-family: SourceSans3Bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--neutral-color-800);
+  transition: color 0.2s;
 }
 
 .btnList {
-    list-style-type: none;
-    display: flex;
-    gap: 8px;
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
 }
 
-[value='2'] {
-    --neutral-color-300: var(--secondary-color-100);
-    --neutral-color-200: var(--secondary-color-0);
+[value="2"] {
+  --neutral-color-300: var(--secondary-color-100);
+  --neutral-color-200: var(--secondary-color-0);
 }
 
-[value='3'] {
-    --neutral-color-300: var(--primary-color-100);
-    --neutral-color-200: var(--primary-color-0);
+[value="3"] {
+  --neutral-color-300: var(--primary-color-100);
+  --neutral-color-200: var(--primary-color-0);
 }

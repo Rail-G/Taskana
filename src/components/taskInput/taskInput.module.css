@@ -1,63 +1,65 @@
 .inputBlock {
-    width: 100%;
-    position: sticky;
-    display: flex;
-    gap: 12px;
-    flex-direction: column;
+  width: 100%;
+  position: sticky;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
 }
 
 .text {
-    font-family: SourceSans3Bold;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--neutral-color-800);
-    transition: color 0.2s;
+  font-family: SourceSans3Bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--neutral-color-800);
+  transition: color 0.2s;
 }
 
 .span {
-    color: var(--primary-color-400)
+  color: var(--primary-color-400);
 }
 
 .inputRow {
-    position: relative;
+  position: relative;
 }
 
 .inputBar {
-    font-family: SourceSans3Regular;
-    font-weight: 400;
-    width: 100%;
-    border-radius: 8px;
-    height: 56px;
-    border: 1px solid var(--neutral-color-400);
-    padding: 16px 45px 16px 15px;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--neutral-color-800);
-    background-color: transparent;
-    transition: border-color 0.2s, color 0.2s;
+  font-family: SourceSans3Regular;
+  font-weight: 400;
+  width: 100%;
+  border-radius: 8px;
+  height: 56px;
+  border: 1px solid var(--neutral-color-400);
+  padding: 16px 45px 16px 15px;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--neutral-color-800);
+  background-color: transparent;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
 }
 .inputBar:hover {
-    border-color: var(--neutral-color-600);
+  border-color: var(--neutral-color-600);
 }
 
 .inputBar:focus {
-    border: 0;
-    outline-offset: 2px;
-    outline: 2px solid var(--neutral-color-800);
+  border: 0;
+  outline-offset: 2px;
+  outline: 2px solid var(--neutral-color-800);
 }
 
 .iconButton {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 16px;
-    right: 12px;
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
 }
 
 .iconButton:hover svg path {
-    fill: var(--neutral-color-800)
+  fill: var(--neutral-color-800);
 }

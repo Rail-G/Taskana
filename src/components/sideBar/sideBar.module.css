@@ -1,12 +1,14 @@
 .sideBar {
-    width: 400px;
-    height: calc(100vh - 64px);
-    padding: 24px;
-    background-color: var(--neutral-color-100);
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-left: 1px solid var(--neutral-color-300, rgba(236, 236, 236, 1));
-    transition: background-color 0.2s, border-color 0.2s;
+  width: 400px;
+  height: calc(100vh - 64px);
+  padding: 24px;
+  background-color: var(--neutral-color-100);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid var(--neutral-color-300, rgba(236, 236, 236, 1));
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
 }

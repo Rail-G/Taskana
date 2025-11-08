@@ -1,36 +1,36 @@
-@import './normalize.css';
-@import './variables.css';
+@import "./normalize.css";
+@import "./variables.css";
 
 @font-face {
-    font-family: SourceSans3Bold;
-    src: url(../fonts/SourceSans3-Bold.woff2);
+  font-family: SourceSans3Bold;
+  src: url(../fonts/SourceSans3-Bold.woff2);
 }
 
 @font-face {
-    font-family: SourceSans3Regular;
-    src: url(../fonts/SourceSans3-Regular.woff2);
+  font-family: SourceSans3Regular;
+  src: url(../fonts/SourceSans3-Regular.woff2);
 }
 
 @font-face {
-    font-family: SourceSans3SemiBold;
-    src: url(../fonts/SourceSans3-SemiBold.woff2);
+  font-family: SourceSans3SemiBold;
+  src: url(../fonts/SourceSans3-SemiBold.woff2);
 }
 
 #root {
-    min-width: 1280px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-width: 1280px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .sortIcon {
-    transition: inherit;
+  transition: inherit;
 }
 
 .sortIcon path {
-    transition: inherit;
+  transition: inherit;
 }

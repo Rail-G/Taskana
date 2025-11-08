@@ -1,19 +1,18 @@
-import { createContext, useEffect, useState } from "react";
+import {createContext, useEffect, useState} from "react";
 
-
-export const ThemeContext = createContext()
+export const ThemeContext = createContext();
 export default function ThemeProvider({children}) {
-    const [theme, setTheme] = useState('light')
-    const changeTheme = () => {
-        setTheme(prev => prev == 'light' ? 'dark' : 'light')
-    }
-    useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme)
-    }, [theme])
+  const [theme, setTheme] = useState("light");
+  const changeTheme = () => {
+    setTheme((prev) => (prev == "light" ? "dark" : "light"));
+  };
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
 
-    return (
-        <ThemeContext.Provider value={{theme, changeTheme}}>
-            {children}
-        </ThemeContext.Provider>
-    )
+  return (
+    <ThemeContext.Provider value={{theme, changeTheme}}>
+      {children}
+    </ThemeContext.Provider>
+  );
 }
