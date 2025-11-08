@@ -1,5 +1,7 @@
 # TaskanaApp
-Раиль(gamurai)
+
+## Стек приложения
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) 
 
 ## Локальная работа с приложениям:
 - Установить все зависимости:
